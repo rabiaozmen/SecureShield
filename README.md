@@ -29,7 +29,6 @@ SecureShield/
 ├── database.db                 # SQLite database (auto-created)
 ├── security.log                # Security events log (auto-created)
 ├── REPORT.md                   # Technical report
-├── REQUIREMENTS_CHECKLIST.md   # Requirements verification
 └── README.md                   # This file
 ```
 
