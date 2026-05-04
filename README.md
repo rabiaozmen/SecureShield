@@ -6,12 +6,12 @@ A secure, production-ready Flask API demonstrating authentication with JWT (JSON
 
 SecureShield is a comprehensive RBAC implementation that covers:
 
-### Part 1: Authentication & Identity (50 Points)
+### Part 1: Authentication & Identity
 - ✅ **Secure Password Storage**: Bcrypt salting and hashing
 - ✅ **JWT Issuance**: Token generation on successful login
 - ✅ **Token Validation**: Middleware protection for secure routes
 
-### Part 2: Access Control & Authorization (50 Points)
+### Part 2: Access Control & Authorization
 - ✅ **Role-Based Routing**: User and Admin access levels
 - ✅ **Token Revocation**: Logout with token blacklisting
 - ✅ **Defensive Logging**: Security event tracking
@@ -271,15 +271,6 @@ curl -X GET http://localhost:5000/profile \
    - Try to send modified token to server
    - Show server rejects it with 401 error
 
-## 📊 Default Users
-
-On first run, the system creates a default admin:
-
-```
-Username: admin
-Password: admin123
-Role: Admin
-```
 
 **Important**: Change these credentials in production!
 
@@ -359,16 +350,7 @@ CREATE TABLE token_blacklist (
 
 This project is created for educational purposes.
 
-## 👥 Team Information
 
-**Team Name**: [Your Team Name]
-
-**Team Members**:
-- [Member 1 Name]
-- [Member 2 Name]
-- [Member 3 Name] (if applicable)
-
----
 
 **Created**: May 2, 2026
 **Deadline**: May 3, 2026 23:59
