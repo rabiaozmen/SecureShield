@@ -247,33 +247,6 @@ curl -X GET http://localhost:5000/profile \
   -H "Authorization: Bearer $TOKEN"
 ```
 
-## 🎬 Video Demo Requirements
-
-### For YouTube Video (2-5 minutes)
-
-1. **Successful Login**
-   - Show registration of new user
-   - Show successful login receiving JWT token
-   - Decode JWT at jwt.io to show payload contents
-
-2. **Access Denied (403 Forbidden)**
-   - Login as regular user (role: "User")
-   - Attempt DELETE /user/<id> endpoint
-   - Show 403 Forbidden response
-   - Demonstrate that non-admin cannot delete users
-
-3. **Tamper Test**
-   - Get valid JWT token
-   - Go to jwt.io
-   - Decode the token
-   - Modify the "role" from "User" to "Admin" in payload
-   - Notice signature becomes invalid (shows red)
-   - Try to send modified token to server
-   - Show server rejects it with 401 error
-
-
-**Important**: Change these credentials in production!
-
 ## 📁 Database Schema
 
 ### Users Table
